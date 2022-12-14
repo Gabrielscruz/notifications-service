@@ -1,5 +1,7 @@
-import { INestApplication, Injectable, OnModuleInit } from '@nestjs/common';
-import { PrismaClient } from '@prisma/client';
+/* eslint-disable prettier/prettier */
+import { Injectable, OnModuleInit, INestApplication } from "@nestjs/common";
+import { PrismaClient } from "@prisma/client";
+
 
 @Injectable()
 export class PrismaService extends PrismaClient implements OnModuleInit {
